@@ -11,12 +11,46 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastName",
+						"type": "string"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastName",
 						"type": "string"
 					}
 				],
@@ -24,16 +58,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "peopleCount",
+				"outputs": [
 					{
-						"internalType": "string",
-						"name": "_value",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "set",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -50,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/tutorial/MyContract.sol": "MyContract"
+			"contracts/tutorial/Mapping_example.sol": "MyContract"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -64,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/tutorial/MyContract.sol": {
-			"keccak256": "0xa1f11b4a95692a4489a9e92fe0087a3ca1253da564254a9a19e9e73265beba21",
+		"contracts/tutorial/Mapping_example.sol": {
+			"keccak256": "0xbaa651cbfecbc42bab88b6655a3448f01fb921233bc8f045be493159f2126e6e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://70aa841ba71d998791ed8073c5b92315012809550cb1592242bde9901f676074",
-				"dweb:/ipfs/QmRz6R2mLF87fHKy4657h3zaWXcJvkBTRSVEz47JSjqodJ"
+				"bzz-raw://b10e4734aff92979507293ef75517a14fe5df7bb6839cb99156923d715f8a15a",
+				"dweb:/ipfs/QmYnQFreunQ11CqxbbCKTbGLWMbisBqJ3YPDA5zZjk2CqQ"
 			]
 		}
 	},
